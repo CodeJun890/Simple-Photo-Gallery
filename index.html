@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo Gallery</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="gallery">
+            <img class="smallImg" src="images/img1.jpg" width="100px" onclick="appear(this)">
+            <img class="smallImg" src="images/img2.jpg" width="100px" onclick="appear(this)">
+            <img class="smallImg" src="images/img3.jpg" width="100px" onclick="appear(this)">
+            <img class="smallImg" src="images/img4.jpg" width="100px" onclick="appear(this)">
+            <img class="smallImg" src="images/img5.jpg" width="100px" onclick="appear(this)">
+        </div>
+        <div class="fullscreen">
+            <img id="fullScreenImg" src="images/img1.jpg" width="506px">
+        </div>
+    </div>
+</body>
+<script>
+    const fullScreen = document.getElementById("fullScreenImg");
+
+    const appear = (imageSource)=>{
+        fullScreen.src = imageSource.src;
+    };
+
+   
+</script>
+</html>
